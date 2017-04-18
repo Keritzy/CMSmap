@@ -30,10 +30,10 @@ class Initialize:
             self.CMSmapUpdate()
         elif self.forceUpdate == 'W':
             self.GetWordPressPlugins()
-            msg = "Downloading WordPress plugins from ExploitDB website"; report.message(msg) 
-            self.GetExploitDBPlugins(self.wp_exploitdb_url, self.wp_plugins_small, 'Wordpress', 'wp-content/plugins/(.+?)/')
-            msg = "Downloading WordPress themes from ExploitDB website"; report.message(msg) 
-            self.GetExploitDBPlugins(self.wp_exploitdb_url, self.wp_themes_small, 'Wordpress', 'wp-content/themes/([\w\-\_]*)/')
+            # msg = "Downloading WordPress plugins from ExploitDB website"; report.message(msg) 
+            # self.GetExploitDBPlugins(self.wp_exploitdb_url, self.wp_plugins_small, 'Wordpress', 'wp-content/plugins/(.+?)/')
+            # msg = "Downloading WordPress themes from ExploitDB website"; report.message(msg) 
+            # self.GetExploitDBPlugins(self.wp_exploitdb_url, self.wp_themes_small, 'Wordpress', 'wp-content/themes/([\w\-\_]*)/')
         elif self.forceUpdate == 'J':
             msg = "Downloading Joomla components from ExploitDB website"; report.message(msg) 
             self.GetExploitDBPlugins(self.joo_exploitdb_url, self.joo_plugins_small, 'Joomla', '\?option=(com.+?)\&')
